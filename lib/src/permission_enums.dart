@@ -83,7 +83,7 @@ class PermissionGroup {
 
   final int value;
 
-  /// Android: Calendar
+ /* /// Android: Calendar
   /// iOS: Calendar (Events)
   static const PermissionGroup calendar = PermissionGroup._(0);
 
@@ -138,20 +138,20 @@ class PermissionGroup {
   /// Android: Microphone
   /// iOS: Speech
   static const PermissionGroup speech = PermissionGroup._(13);
-
+*/
   /// Android: External Storage
   /// iOS: Nothing
   static const PermissionGroup storage = PermissionGroup._(14);
 
-  /// Android: Ignore Battery Optimizations
+/*  /// Android: Ignore Battery Optimizations
   static const PermissionGroup ignoreBatteryOptimizations =
       PermissionGroup._(15);
-
+*/
   /// The unknown permission only used for return type, never requested
   static const PermissionGroup unknown = PermissionGroup._(16);
 
   static const List<PermissionGroup> values = <PermissionGroup>[
-    calendar,
+  /*  calendar,
     camera,
     contacts,
     location,
@@ -164,14 +164,14 @@ class PermissionGroup {
     reminders,
     sensors,
     sms,
-    speech,
+    speech,*/
     storage,
-    ignoreBatteryOptimizations,
+   // ignoreBatteryOptimizations,
     unknown,
   ];
 
   static const List<String> _names = <String>[
-    'calendar',
+   /* 'calendar',
     'camera',
     'contacts',
     'location',
@@ -184,9 +184,9 @@ class PermissionGroup {
     'reminders',
     'sensors',
     'sms',
-    'speech',
+    'speech',*/
     'storage',
-    'ignoreBatteryOptimizations',
+   // 'ignoreBatteryOptimizations',
     'unknown',
   ];
 
